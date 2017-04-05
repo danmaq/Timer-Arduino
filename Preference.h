@@ -1,0 +1,22 @@
+#ifndef PREFERENCE_H
+#define PREFERENCE_H
+
+#define PORT_BUTTON  (2)
+
+#define PORT_INDICATOR_1  (8)
+#define PORT_INDICATOR_2  (9)
+#define PORT_OUTPUT_RESET  (11)
+#define PORT_OUTPUT_MAIN  (13)
+
+#define PORT_INDEX_D  (0)
+#define PORT_INDEX_B  (8)
+
+#define BUTTON_1  (_BV(PORT_BUTTON - PORT_INDEX_D))
+#define INDICATOR_1  (_BV(PORT_INDICATOR_1 - PORT_INDEX_B))
+#define INDICATOR_2  (_BV(PORT_INDICATOR_2 - PORT_INDEX_B))
+#define RESET_1  (_BV(PORT_OUTPUT_RESET - PORT_INDEX_B))
+#define MOTOR_1  (_BV(PORT_OUTPUT_MAIN - PORT_INDEX_B))
+
+typedef unsigned long u32;
+
+#endif  // PREFERENCE_H
